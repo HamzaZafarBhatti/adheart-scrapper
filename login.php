@@ -25,6 +25,8 @@ $res = $httpClient->request('POST', $url, [
     'connect_timeout' => 20
 ]);
 
+// echo json_encode($res->getBody());
+
 do {
     if (file_get_contents(COOKIE_FILE)) {
         $response = [
