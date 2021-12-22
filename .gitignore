@@ -1,0 +1,6 @@
+/vendor/
+composer.json
+composer.lock
+*.txt
+*.json
+demo.html

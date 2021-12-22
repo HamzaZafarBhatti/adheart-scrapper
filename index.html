@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adheart URL Scrapper</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container loader">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+    <div class="backdrop"></div>
+
+    <header>
+        <h1>Adheart URL Scrapper</h1>
+    </header>
+
+    <div class="container">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row align-items-center row-gap-3 justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="text" id="email" class="form-control" placeholder="email"
+                                value="jl@baby-rewards.com">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" class="form-control" placeholder="password"
+                                value="S8JcRpXsQx7bPfy4">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <button class="btn btn-outline-success" id="login-btn">Login</button>
+                    </div>
+                </div>
+                <div class="get_creatives">
+                    <hr>
+                    <div class="row row-gap-3">
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-info" id="creative-btn">Get Creatives Information</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-primary" id="creative-url-btn">Download Creative URL File</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-outline-primary" id="cb-creative-url-btn">Download CB Creative URL File</button>
+                        </div>
+                        <div class="col">
+                            <label>Records</label>
+                            <h4 class="total_creatives">0</h4>
+                        </div>
+                        <div class="col">
+                            <label>Pages</label>
+                            <h4 class="total_pages">0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
