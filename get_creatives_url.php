@@ -14,6 +14,9 @@ $httpClient = new \GuzzleHttp\Client([
 $html_arr = array();
 $total_pages = $_POST['total_pages'];
 for ($i = 1; $i <= $total_pages; $i++) {
+    if($i > 4) {
+        break;
+    }
     if ($i == 1) {
         $url = 'https://adheart.ru/teasers/?in_links=' . IN_LINKS . '&geos%5B%5D=' . GEO . '&languages%5B%5D=' . LANG . '&cta_types%5B%5D=' . CTA_TYPE1 . '&cta_types%5B%5D=' . CTA_TYPE2 . '&date_created=' . YESTERDAY_DATE . '+-+' . YESTERDAY_DATE . '&date_created_from=' . YESTERDAY_DATE . '&date_created_to=' . YESTERDAY_DATE;
     } else {
@@ -28,7 +31,6 @@ for ($i = 1; $i <= $total_pages; $i++) {
     libxml_use_internal_errors(true);
 
     $html_arr_temp = explode('class="form-control form-control-sm bd-0 p-1" value="', $htmlString);
-    echo $htmlString;
     foreach ($html_arr_temp as $index => $html_arr_item) {
         if ($index == 0) {
             continue;
